@@ -5,7 +5,6 @@ import time
 def update(time_display_label, date_display_label, window):
     time_display_label.config(text=time.strftime("%H:%M:%S"))
     date_display_label.config(text=time.strftime("%a, %d %b %Y"))
-
     window.after(1000, update, time_display_label, date_display_label, window)
 
 
